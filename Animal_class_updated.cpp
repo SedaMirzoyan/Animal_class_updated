@@ -86,7 +86,7 @@ public:
         std::cout << "Land animal Parametrized constructor\n";
     }
 
-    ~Land_animals()
+    virtual ~Land_animals()
     {
         std::cout << "Land animal Destructor\n";
     }
@@ -185,7 +185,7 @@ public:
         if_can_fly = f;
     }
 
-    ~Birds()
+    virtual ~Birds()
     {
         std::cout << "Birds Destructor\n";
     }
@@ -276,7 +276,7 @@ public:
         is_fish = f;
     }
 
-    ~Sea_animals()
+    virtual ~Sea_animals()
     {
         std::cout << "Sea animals Destructor\n";
 
