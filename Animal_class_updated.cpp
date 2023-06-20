@@ -115,7 +115,7 @@ public:
         std::cout << "I am a land animal\n";
     }
 
-    virtual void move() override
+    void move() override
     {
         if (is_mammal == true)
         {
@@ -214,7 +214,7 @@ public:
     }
 
 
-    virtual void move() override
+    void move() override
     {
         std::cout << "Move function in Birds class\n";
     }
@@ -298,7 +298,7 @@ public:
         return *this;
     }
 
-    virtual void move() final
+    void move() final
     {
         std::cout << "All sea animals are swimming\n";
     }
