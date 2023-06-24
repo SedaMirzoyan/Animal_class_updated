@@ -18,7 +18,7 @@ public:
         count_arr = new int[count];
     }
 
-    Animal(std::string s, int c, int* ca)
+    Animal(std::string s, int c)
     {
         std::cout << "Animal Parameterized constructor\n";
         name = s;
