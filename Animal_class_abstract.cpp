@@ -15,7 +15,7 @@ public:
         name = " ";
         count = 0;
 
-        count_arr = new int[count];
+        count_arr = nullptr;
     }
 
     Animal(std::string s, int c)
@@ -45,7 +45,7 @@ public:
 
     Animal& operator=(const Animal& ob)
     {
-        std::cout << "Animal Opeartor assignment\n";
+        std::cout << "Animal Operator assignment\n";
         if (this != &ob)
         {
             this->name = ob.name;
@@ -78,7 +78,7 @@ public:
     {
         is_wild = w;
         is_mammal = m;
-        std::cout << "Land animal Parametrized constructor\n";
+        std::cout << "Land animal Parameterized constructor\n";
     }
 
     virtual ~Land_animals()
@@ -116,7 +116,7 @@ public:
         }
         else
         {
-            std::cout << "Reptils are crawling\n";
+            std::cout << "Reptiles are crawling\n";
         }
     }
 
@@ -173,7 +173,7 @@ public:
 
     Birds(bool w, bool f)
     {
-        std::cout << "Birds Parametrized constructor\n";
+        std::cout << "Birds Parameterized constructor\n";
         is_wild = w;
         if_can_fly = f;
     }
@@ -258,7 +258,7 @@ public:
 
     Sea_animals(bool f)
     {
-        std::cout << "Sea animals Default constructor\n";
+        std::cout << "Sea animals Parameterized constructor\n";
 
         is_fish = f;
     }
@@ -326,7 +326,7 @@ public:
 
     Lion(bool f)
     {
-        std::cout << "Lion Parametrized constructor\n";
+        std::cout << "Lion Parameterized constructor\n";
         setIsMammal(true);
         setIsWild(true);
         if_has_pride = f;
@@ -378,7 +378,7 @@ public:
 
     Snake(bool p)
     {
-        std::cout << "Snake Parametrized constructor\n";
+        std::cout << "Snake Parameterized constructor\n";
         is_poisonous = p;
         setIsMammal(false);
         setIsWild(true);
@@ -429,7 +429,7 @@ public:
 
     Cow(int c)
     {
-        std::cout << "Cow Parametrized constructor\n";
+        std::cout << "Cow Parameterized constructor\n";
         color = c;
         setIsMammal(true);
         setIsWild(false);
@@ -482,7 +482,7 @@ public:
 
     Eagle(int c)
     {
-        std::cout << "Eagle Parametrized constructor\n";
+        std::cout << "Eagle Parameterized constructor\n";
         color = c;
         setIfCanFly(true);
         setIsWild(true);
@@ -534,7 +534,7 @@ public:
 
     Penguin(int n)
     {
-        std::cout << "Penguin Parametrized constructor\n";
+        std::cout << "Penguin Parameterized constructor\n";
         num = n;
         setIfCanFly(false);
         setIsWild(true);
@@ -585,7 +585,7 @@ public:
 
     Parrot(int c)
     {
-        std::cout << "Parrot Parametrized constructor\n";
+        std::cout << "Parrot Parameterized constructor\n";
         color = c;
         setIfCanFly(true);
         setIsWild(false);
@@ -638,7 +638,7 @@ public:
 
     Fish(int c)
     {
-        std::cout << "Fish Parametrized constructor\n";
+        std::cout << "Fish Parameterized constructor\n";
         color = c;
         setIfIsFish(true);
     }
@@ -682,7 +682,7 @@ public:
 
     Seahorse(int c)
     {
-        std::cout << "Seahorse Parametrized constructor\n";
+        std::cout << "Seahorse Parameterized constructor\n";
         color = c;
         setIfIsFish(false);
     }
@@ -726,7 +726,7 @@ public:
 
     Octopus(int c)
     {
-        std::cout << "Octopus Parametrized constructor\n";
+        std::cout << "Octopus Parameterized constructor\n";
         color = c;
         setIfIsFish(false);
     }
