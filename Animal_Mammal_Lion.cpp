@@ -205,6 +205,8 @@ int main()
 
     Lion lion1 = lion;
 
+    delete ptr;
+
     return 0;
 }
 
