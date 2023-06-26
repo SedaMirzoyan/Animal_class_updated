@@ -798,6 +798,10 @@ int main()
     Animal* ptr2 = new Penguin;
     ptr2->move();
 
+    delete ptr;
+    delete ptr1;
+    delete ptr2;
+
     return 0;
 }
 
