@@ -151,6 +151,11 @@ public:
         is_mammal = m;
     }
 
+    void operator()()
+    {
+        std::cout << "Functor\n";
+    }
+
 };
 
 
@@ -287,6 +292,8 @@ int main()
 
     Amphibian a;
     Amphibian a_cp = a;
+
+    a();
 
     delete ptr;
 
