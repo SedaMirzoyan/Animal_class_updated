@@ -9,6 +9,8 @@ class Animal
     int count;
 
 public:
+    static int constr_count;
+
     Animal()
     {
         std::cout << __func__ << std::endl;
@@ -53,6 +55,8 @@ public:
     virtual void move() = 0;
 
 };
+
+int Animal::constr_count = 0;
 
 class Land_animals : virtual public Animal {
     bool is_wild; //is wild or domestic
@@ -294,6 +298,8 @@ int main()
     Amphibian a_cp = a;
 
     a();
+
+    std::cout << "Animal constructor was called " << Animal::constr_count << " times " << std::endl;
 
     delete ptr;
 
