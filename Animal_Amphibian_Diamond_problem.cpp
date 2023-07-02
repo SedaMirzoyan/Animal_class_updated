@@ -16,6 +16,8 @@ public:
         std::cout << __func__ << std::endl;
         name = " ";
         count = 0;
+
+        constr_count++;
     }
 
     Animal(std::string s, int c)
@@ -23,6 +25,8 @@ public:
         std::cout << __func__ << std::endl;
         name = s;
         count = c;
+
+        constr_count++;
     }
 
     virtual ~Animal()
